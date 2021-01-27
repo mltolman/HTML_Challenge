@@ -1,0 +1,30 @@
+.navbar{
+    position: fixed;
+    right: 40px;
+    top: -20px;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.navbar li a {
+    color: grey;
+    text-decoration: none;
+}
+h1 {
+    font-size: 20;
+    background-color: green;
+    margin-right: 850px;
+    margin-top: 3px;
+    position: relative;
+    top:-10; 
+    color: white;
+}
+
+.image-nav-pic {
+    width: 140px;
+    height: 140px;
+}
