@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- start up navbar-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Design Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a class="land-link" href="../index.html"><h1 class="site-header">Latitude</h1></a>
+                </div>
+                <div class="col-md-10">
+                    <nav class="navbar">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" type="button" href="#" aria-haspopup="true" aria-expanded="false">Plots</a>
+                                <div class="dropdown-menu dropdown-primary" id="myDropdown" aria-labelledby="navbarDropdownMenuLink1">
+                                    <a class="dropdown-item" href="../visualizations/temp.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="../visualizations/humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="../visualizations/cloud.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="../visualizations/wind.html">Wind Speed</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Comparison_page/comparison.html">Comparison</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../Data_page/city_data.html">Data</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- End of nav bar-->
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="row">
+            <div class="col-md-8">
+                <h3>Summary: Latitude Vs. Cloudiness</h3>
+                <img src="../assets/images/Fig3.png" alt="City Latitude Vs Cloudiness" class="main-picture">
+                <p class="summary-paragraph">Summary of City Latitude Vs Cloudiness</p>
+
+                <!--landing area-->
+            </div>
+            <div class="col-md-4">
+                <!--Image nav area-->
+                <h2 class="image-nav-header">Visualizations</h2>
+                <section id="page-nav">
+                    <a href="temp.html"><img src="../assets/images/Fig1.png" alt="City Latitude Vs Max Temperature" class="image-nav-pic"></a>
+                    <a href="humidity.html"><img src="../assets/images/Fig2.png" alt="City Latitude Vs Humidity" class="image-nav-pic"></a>
+                    <a href="cloud.html"><img src="../assets/images/Fig3.png" alt="City Latitude Vs Cloudiness" class="image-nav-pic"></a>
+                    <a href="wind.html"><img src="../assets/images/Fig4.png" alt="City Latitude Vs Wind Speed" class="image-nav-pic"></a>
+                </section>
+            </div>
+        </section>
+        <!--section close-->
+        
+    </main>
+</body>
+
+
+</html>

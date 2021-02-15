@@ -1,30 +1,180 @@
 .navbar{
-    position: fixed;
-    right: 40px;
-    top: -20px;
+    float: right;
+    top: -10px; 
 }
 
 .navbar li{
     display: inline-block;
     padding: 10px;
     cursor: pointer;
+    margin-top: 10px;
+    
 
 }
 .navbar li a {
     color: grey;
     text-decoration: none;
 }
-h1 {
-    font-size: 20;
+
+
+
+.site-header {
+    font-size: 10;
     background-color: green;
-    margin-right: 850px;
-    margin-top: 3px;
+    width: 225px;
+    padding: 10px;
     position: relative;
-    top:-10; 
+    top:-10;
     color: white;
+    cursor: pointer;
+    text-align: center;
+    
 }
 
 .image-nav-pic {
     width: 140px;
     height: 140px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-left:10px
 }
+
+.image-nav-header {
+    padding: 50px;
+    color: green;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.land-link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.summary-image {
+    width: 140px;
+    height: 140px;
+}
+
+body {
+    background: rgb(240, 240, 240);
+}
+header {
+    background-color: white;
+    height: 70px;
+    margin-bottom: 25px;
+}
+
+table {
+    background: white;
+    padding: left 100px;
+}
+
+.comparison-image {
+    width: 400px;
+    height: 300px;
+}
+
+.comp-paragraph {
+    padding: 20px;
+    align-items: center;
+    font-style: bold;
+    color: green;
+}
+
+.comparisons {
+    font-size: 25px;
+    padding-top: 20px;
+    align-self: center;
+    font-weight: bold;
+}
+
+.main-picture {
+    height: 500px;
+    width: 700px;
+}
+
+.summary-paragraph {
+    text-align: center;
+}
+
+.col-md-8 {
+    background-color: white;
+    padding-right: 10px;
+    border-style: solid;
+    border-color: green;
+
+}
+.col-md-4 {
+    background: white;
+    border-style: solid;
+    border-color: green;
+    
+}
+
+.col-md-12 {
+    background: white;
+    border-color:green;
+    border-style: solid;
+    text-align: center;
+}
+
+h3 {
+    color: green;
+    padding: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.summary-paragraph {
+    padding-bottom: 50px;    
+}
+
+#nav-select {
+    visibility: hidden;
+}
+/* When screen is smaller than 480px */
+
+@media (max-width:668px) {
+    .nav {
+        visibility: hidden;
+    }
+    
+
+}
+
+@media (max-width:991px) {
+    .comparison-image {
+        width: 200px;
+        height: 100px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

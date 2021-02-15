@@ -4,38 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Web Design Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <header>
-        <h1>Latitude</h1>
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="http://">Plots</a>
-                </li>
-                <li>
-                    <a href="http://">Comparison</a>
-                </li>
-                <li>
-                    <a href="http://">Data</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- End of nav bar-->
+        <div class="header-container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a class="land-link" href="index.html"><h1 class="site-header">Latitude</h1></a>
+                </div>
+                <div class="col-md-10">
+                    <nav class="navbar">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" type="button" href="#" aria-haspopup="true" aria-expanded="false">Plots</a>
+                                <div class="dropdown-menu dropdown-primary" id="myDropdown" aria-labelledby="navbarDropdownMenuLink1">
+                                    <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="visualizations/cloud.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Comparison_page/comparison.html">Comparison</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="Data_page/city_data.html">Data</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- End of nav bar-->
+            </div>
+        </div>
     </header>
     <main class="container">
         <section class="row">
             <div class="col-md-8">
                 <h3>Summary: Latitude Vs. X</h3>
-                <p>This site is meant to visualize weather data from cities around the world. There is data for cloudiness, max temperature, wind speed and humidity.</p>
+                <img src="../assets/images/Fig1.png" alt="City Latitude Vs Max Temperature" class="summary-image">
+                <p class="landing-paragraph">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                <p class="summary-paragraph">After assembling the dataset we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
 
-        <img id="lat-vs-temp" src="Instructions/Resources/assets/images.Fig1.png" alt="City Latitude Vs Max Temperature">
-        <img id="lat-vs-humidity" src="Instructions/Resources/assets/images.Fig2.png" alt="City Latitude Vs Humidity">
-        <img id="lat-vs-cloud" src="Instructions/Resources/assets/images.Fig3.png" alt="City Latitude Vs Cloudiness">
-        <img id="lat-vs-wind" src="Instructions/Resources/assets/images.Fig4.png" alt="City Latitude Vs Wind Speed">
-       
                 <!--landing area-->
             </div>
             <div class="col-md-4">
@@ -52,18 +64,10 @@
         <!--section close-->
         
     </main>
+    
+
 </body>
 
 
-
-<h3>Summary: Latitude Vs. X</h3>
-        <p>This site is meant to visualize weather data from cities around the world. There is data for cloudiness, max temperature, wind speed and humidity.</p>
-        <h3>Visualizations</h3>
-
-        <img id="lat-vs-temp" src="Instructions/Resources/assets/images.Fig1.png" alt="City Latitude Vs Max Temperature">
-        <img id="lat-vs-humidity" src="Instructions/Resources/assets/images.Fig2.png" alt="City Latitude Vs Humidity">
-        <img id="lat-vs-cloud" src="Instructions/Resources/assets/images.Fig3.png" alt="City Latitude Vs Cloudiness">
-        <img id="lat-vs-wind" src="Instructions/Resources/assets/images.Fig4.png" alt="City Latitude Vs Wind Speed">
-       
 
 </html>
